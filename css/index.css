@@ -1,4 +1,8 @@
+body { 
+    min-width: 1400px;
+}
 header {
+    position: relative;
     padding: 0 50px;
     text-align: center;
 }
@@ -72,4 +76,103 @@ header .spot li a {
 }
 header .spot li:last-child a {
     padding-right: 0px;
+}
+
+header .spot li a:hover {
+    text-decoration: underline;
+}
+
+.visual {
+    position: relative;
+    padding: 0 50px;  
+}
+/* 공통되는 부분은 묶어서 */
+.visual .prev,
+.visual .next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 47px;
+    transform: translateY(-50%);
+    background: url(../image/sp_com.png) no-repeat;
+    color:transparent;
+}
+.visual .prev {
+    left: 82px;
+    background-position: -128px -60px;
+}
+.visual .next {
+    right: 82px;
+    background-position: -158px -60px;
+}
+.visual .control {
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    width: 100%;
+    text-align: center;
+}
+.visual .control > div {
+    display: inline-block;
+    position: relative;
+    padding: 0 45px 0 0;
+}
+.visual .control > div > div {
+    position: absolute;
+    right: 0;
+}
+.visual .control > div > div a {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    width: 8px; height: 9px;
+    position: relative;
+    top: -7px;
+    overflow: hidden;
+    background: url(../image/sp_com.png) no-repeat;
+    opacity: 0.5;
+}
+.visual .control > div > div a.on {
+    opacity: 1;
+}
+.visual .control > div > div a.play {
+    background-position: -108px -72px;
+}
+.visual .control > div > div a.pause {
+    background-position: -108px -60px;
+}
+.visual .control a {
+    color: transparent;
+}
+.visual .control ul,
+.visual .control li {
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
+}
+.visual .control li.on a {
+    background-color: white;
+}
+.visual .control li a{
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: rgba(255,255,255,0.5);
+    border: none;
+}
+.visual .con > div {
+    height: 690px;
+}
+.visual .con .slide {
+    background: url(../image/bg_main00.jpg) no-repeat center;
+    color: #fff;
+    font-size: 24px;
+}
+.visual .con .slide .txt {
+    position: relative;
+    top:48%;
+    text-align: center;
+}
+.visual .con .slide .large-text{
+    font-size: 42px;
 }
