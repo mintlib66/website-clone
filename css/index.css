@@ -169,6 +169,135 @@ header .spot li a:hover {
     background-position: -364px -184px;
 }
 
+.magazine {
+    position: relative;
+    height: 670px;
+    background-color: #DFD9D1;
+    overflow: hidden;
+}
+.magazine h2 {
+    padding: 49px 0 15px 0;
+    font-size: 28px;
+    color: black;
+    text-align: center;
+    line-height: 100%;
+}
+.magazine .magazine_p{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    line-height: 100%;
+}
+.magazine .slide_box > div {
+    position: absolute;
+    left: 50%; top:150px;
+    transform: translate(-50%, 0);
+    width: 1180px;
+    height: 430px;
+}
+.magazine .slide_box > div:nth-child(1) {
+    margin-left: -1280px;
+}
+.magazine .slide_box > div:nth-child(3) {
+    margin-left: 1280px;
+}
+.magazine .slide_box .left_box {
+    position: relative;
+    float: left;
+    width: 800px;
+    height: 430px;
+    overflow: hidden;
+}
+.magazine .slide_box .left_box img {
+    width: 100%;
+}
+.magazine .slide_box .left_box div {
+    position: absolute;
+    right: 0; top: 0;
+    width: 200px; height: 100%;
+    padding: 47px 20px;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.magazine .slide_box .left_box div h3 {
+    padding-bottom: 5px;
+    font-size: 19px;
+    line-height: 32px;
+}
+.magazine .slide_box .left_box div h3 span {
+    display: block;
+    font-weight: normal;
+}
+.magazine .slide_box .left_box div p {
+    font-size: 15px;
+    line-height: 24px;
+}
+.magazine .slide_box .left_box div a {
+    position: absolute;
+    left: 20px; bottom: 40px;
+    display: block;
+    width: 160px; height: 45px;
+    border: 1px solid #fff;
+    color:#fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 45px;
+}
+.magazine .slide_box .right_box {
+    float: right;
+    padding: 20px 20px 0; 
+    box-sizing: border-box;
+    width: 380px;
+    height: 430px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.magazine .slide_box .right_box li {
+    padding: 0 0 20px;
+}
+.magazine .slide_box .right_box li a {
+    display: table;
+    position: relative;
+    padding: 0 0 0 100px;
+}
+.magazine .slide_box .right_box li a div {
+    display: table-cell;
+    height: 82px;
+    vertical-align: middle;
+}
+.magazine .slide_box .right_box img {
+    position: absolute;
+    left: 0; top: 0;
+    width: 82px;
+    height: 82px;
+    overflow: hidden;
+}
+.magazine .slide_box .right_box a strong {
+    display: block;
+    font-size: 13px;
+    color: #000;
+}
+.magazine .slide_box .right_box a span {
+    font-size: 16px;
+    color: #333;
+}
+.magazine .slide_box .right_box a span:hover {
+    text-decoration: underline;
+}
+.magazine.slide .prev {
+    left: 50%; margin: 26px 0 0 -640px;
+    background-position: -336px -676px;    
+}
+.magazine.slide .next {
+    right: 50%; margin: 26px -640px 0 0;
+    background-position: -406px -676px;    
+}
+.magazine.slide .control {
+    bottom: 30px;
+}
+
+/* slide */
 .slide .prev,
 .slide .next {
     display: block;
