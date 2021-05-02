@@ -175,13 +175,6 @@ header .spot li a:hover {
     background-color: #DFD9D1;
     overflow: hidden;
 }
-.magazine h2 {
-    padding: 49px 0 15px 0;
-    font-size: 28px;
-    color: black;
-    text-align: center;
-    line-height: 100%;
-}
 .magazine .magazine_p{
     font-size: 15px;
     color: black;
@@ -285,19 +278,89 @@ header .spot li a:hover {
 .magazine .slide_box .right_box a span:hover {
     text-decoration: underline;
 }
-.magazine.slide .prev {
-    left: 50%; margin: 26px 0 0 -640px;
-    background-position: -336px -676px;    
-}
-.magazine.slide .next {
-    right: 50%; margin: 26px -640px 0 0;
-    background-position: -406px -676px;    
-}
 .magazine.slide .control {
     bottom: 30px;
 }
 
+.blog {
+    position: relative;
+    width: 100%;
+    height: 768px;
+    background-color: #F2F0ED;
+}
+.blog .slide_box {
+    position: absolute;
+    left: 50%; top:125px;
+    transform: translate(-50%, 0);
+    width: 1180px;
+    height: 550px;
+}
+.blog .long_box {
+    display: inline-block;
+    padding: 0 8px;
+    width: 280px;
+    height: 550px;
+}
+.blog .slide_box > div > div:nth-child(1) {
+    padding-left: 0;
+}
+.blog .slide_box > div > div:nth-child(4) {
+    padding-right: 0;
+}
+.blog .long_box .top_box {
+    width: 100%;
+    height: 280px;
+}
+.blog .long_box .bottom_box {
+    position: relative;
+    padding: 28px;
+    box-sizing: border-box;
+    height: 278px;
+    background-color: #fff;
+    letter-spacing: -1px;
+}
+.blog .long_box .bottom_box .title{
+    position: absolute;
+    top:30px;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: -2px;
+}
+.blog .long_box .bottom_box > div {
+    position: absolute;
+    top:95px;
+    width: 100%;
+}
+.blog .long_box .bottom_box .infotext {
+    width: 220px;
+    text-align: left;
+}
+.blog .long_box .bottom_box .infotext tr{
+    height: 28px;
+    vertical-align: top;
+}
+.blog .long_box .bottom_box .infotext th{
+    font-size: 13px;
+    color: #000;
+    width: 30%; 
+}
+.blog .long_box .bottom_box .infotext td{
+    font-size: 15px;
+    color: #1F1F1F;
+}
+.blog.slide .control {
+    bottom: 38px;
+}
+
+
 /* slide */
+.slide h2 {
+    padding: 49px 0 15px 0;
+    font-size: 28px;
+    color: black;
+    text-align: center;
+    line-height: 100%;
+}
 .slide .prev,
 .slide .next {
     display: block;
@@ -317,6 +380,16 @@ header .spot li a:hover {
     right: 82px;
     background-position: -158px -60px;
 }
+
+.slide .prev.op2 {
+    left: 50%; margin: 26px 0 0 -640px;
+    background-position: -336px -676px;
+}
+.slide .next.op2 {
+    right: 50%; margin: 26px -640px 0 0;
+    background-position: -406px -676px;
+}
+
 .slide .control {
     position: absolute;
     left: 0;
@@ -370,4 +443,10 @@ header .spot li a:hover {
     height: 3px;
     background-color: rgba(255,255,255,0.5);
     border: none;
+}
+.slide .control.op2 li.on a {
+    background-color: #2D5B79;
+}
+.slide .control.op2 li a {
+    background-color: #D7D9D6;
 }
