@@ -278,6 +278,12 @@ header .spot li a:hover {
 .magazine .slide_box .right_box a span:hover {
     text-decoration: underline;
 }
+.magazine.slide .prev.op2 {
+    left: 50%; margin: 26px 0 0 -640px;
+}
+.magazine.slide .next.op2 {
+    right: 50%; margin: 26px -640px 0 0;   
+}
 .magazine.slide .control {
     bottom: 30px;
 }
@@ -300,6 +306,11 @@ header .spot li a:hover {
     padding: 0 8px;
     width: 280px;
     height: 550px;
+    vertical-align: top;
+}
+.blog .long_box a:hover,
+.blog .long_box .infotext td:hover{
+    text-decoration: underline;
 }
 .blog .slide_box > div > div:nth-child(1) {
     padding-left: 0;
@@ -319,9 +330,7 @@ header .spot li a:hover {
     background-color: #fff;
     letter-spacing: -1px;
 }
-.blog .long_box .bottom_box .title{
-    position: absolute;
-    top:30px;
+.blog .long_box .bottom_box .title {
     font-size: 18px;
     color: #000;
     letter-spacing: -2px;
@@ -350,6 +359,57 @@ header .spot li a:hover {
 }
 .blog.slide .control {
     bottom: 38px;
+}
+/*issues
+-op 화살표 작아짐
+-blog 섹션 bottom box 제목 여백영향 안받는 문제
+-long box 전체 영역 hover시 underline발생하도록 수정
+*/
+
+.youtube {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    background-color: #fff;
+}
+.youtube .slide_box {
+    position: absolute;
+    left: 50%; top:125px;
+    transform: translate(-50%, 0);
+    width: 1180px;
+    height: 235px;
+}
+.youtube .box {
+    display: inline-block;
+    padding: 0 8px;
+    width: 280px;
+    height: 235px;
+    vertical-align: top;
+}
+.youtube a:hover{
+    text-decoration: underline;
+}
+.youtube .slide_box > div > div:nth-child(1) {
+    padding-left: 0;
+}
+.youtube .slide_box > div > div:nth-child(4) {
+    padding-right: 0;
+}
+.youtube .box img{
+    width: 280px;
+    height: 160px;
+}
+.youtube .box .title {
+    display: block;
+    height: 75px;
+    padding: 15px;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.youtube .control.op2 {
+    bottom: 40px;
 }
 
 
@@ -382,12 +442,12 @@ header .spot li a:hover {
 }
 
 .slide .prev.op2 {
-    left: 50%; margin: 26px 0 0 -640px;
-    background-position: -336px -676px;
+    left: 50%; margin: -20px 0 0 -670px;
+    background-position: -319px -543px;
 }
 .slide .next.op2 {
-    right: 50%; margin: 26px -640px 0 0;
-    background-position: -406px -676px;
+    right: 50%; margin: -20px -670px 0 0;
+    background-position: -350px -543px;
 }
 
 .slide .control {
