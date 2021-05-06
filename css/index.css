@@ -497,8 +497,12 @@ header .spot li a:hover {
     padding: 10px 30px;
     box-sizing: border-box;
 }
+.notice > div .box.article ul li a:hover p{
+    text-decoration: underline;
+} 
 .notice > div .box.article ul li p {
     font-size: 16px;
+    line-height: 120%;
     letter-spacing: -1px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -550,7 +554,142 @@ header .spot li a:hover {
     color: #fff;
     text-align: center;
 }
+footer {
+    color: #fff;
+}
+footer .top {
+    height: 70px;
+    background-color: #383F43;
+}
+footer .top > div {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 13px 0 10px;
+}
+footer .top ul {
+    float: left;
+}
+footer .top ul li{
+    float: left;
+    position: relative;
+    padding : 0 20px 0 0;
+}
+footer .top ul li:after {
+    content: "";
+    position: absolute;
+    right: 9px; top: 50%; 
+    margin-top: -4px;
+    width: 1px; height: 8px;
+    background-color: #70767A;
+}
+footer .top ul li:last-child:after {
+    display: none;
+}
+footer .top ul li a{
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: -1px;
+    line-height: 45px;
+}
 
+footer .top > div .right {
+    float: right;
+}
+footer .top .counsel {
+    display: inline-block;
+    width: 303px; height: 45px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #2A3033;
+}
+footer .top .counsel strong {
+    padding: 0 10px 0 0 ;
+}
+footer .top .counsel p{
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+footer .top .counsel p.small {
+    font-size: 12px;
+}
+footer .top select {
+    display: inline-block;
+    margin: 0 0 0 8px;
+    padding: 0 20px;
+    width: 200px; height: 45px;
+    font-size: 14px;
+    letter-spacing: -1px;
+    vertical-align: 10px;
+}
+footer .bottom {
+    height: 210px;
+    padding: 40px 0 45px;
+    box-sizing: border-box;
+    background-color: #4C5459;
+}
+footer .bottom > div {
+    width: 1180px;
+    margin: 0 auto;
+}
+footer .bottom .left {
+    float: left;
+    letter-spacing: -1px;
+}
+footer .bottom .left p.icon {
+    display: block;
+    width: 130px; height: 50px;
+    background: url(../image/sp_com.png) no-repeat -150px 0;
+    color: transparent;
+}
+footer .bottom .left ul {
+    padding: 32px 0 12px;
+}
+footer .bottom .left ul li{
+    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+    font-size: 14px;
+    line-height: 100%;
+}
+footer .bottom .left ul li:after {
+    content: "";
+    position: absolute;
+    right: 9px; top: 50%; 
+    margin-top: -4px;
+    width: 1px; height: 8px;
+    background-color: #70767A;
+}
+footer .bottom .left ul li:last-child:after {
+    display: none;
+}
+footer .bottom .left address {
+    font-size: 14px;
+    line-height: 100%;
+}
+footer .bottom .right {
+    float: right;
+    padding: 49px 0 0;
+}
+footer .bottom .right ul li {
+    float: left;
+}
+footer .bottom .right ul li a{
+    display: block;
+    margin: 0 0 0 12px;
+    width: 45px; height: 45px;
+    background: url(../image/sp_com.png) #383F43;
+    color: transparent;
+}
+footer .bottom .right li:nth-child(1) a{
+    background-position: -320px -605px;
+}
+footer .bottom .right li:nth-child(2) a{
+    background-position: -366px -605px;
+}
+footer .bottom .right li:nth-child(3) a{
+    background-position: -413px -605px;
+}
 
 /* slide */
 .slide h2 {
